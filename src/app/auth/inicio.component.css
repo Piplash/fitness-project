@@ -1,0 +1,99 @@
+:host{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+
+nav.navbar-transparent {
+    background-color: transparent;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.navbar-brand{
+    color:white;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-link:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.seccion {
+    background: url("../../assets/background.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh !important;
+}
+
+.contenedorPrincipal {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgb(53 42 37 / 61%);
+    height: 100vh; /* Set height to viewport height */
+    text-align: center;
+    color:white;
+}
+
+.contenedorPrincipal h1 {
+    text-align: center; /* Center the text inside h1 */
+    color: white; /* Example color */
+}
+
+.separador{
+    height: 0.2rem;
+    max-width: 5rem;
+    margin: 1.5rem auto;
+    color: #f4623a;
+    border: 2px solid #f4623a;
+    opacity: 1;
+}
+
+.descContenedor{
+    max-width: 70%;
+}
+
+.titulo{
+    font-size: 4rem;
+    font-weight:600;
+}
+
+.descripcion{
+    max-width: 90%;
+}
+
+.btnRegistrate{
+    color: white;
+    background: #f4623a;
+    border-radius: 25px;
+    max-width: 200px;
+    margin: 0 auto;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.btnRegistrate:hover{
+    background: #ff5222;
+    transition: 0.5s;
+}
+
+@media (max-width: 775px){
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .descContenedor{
+        max-width: 90%;
+    }
+}
