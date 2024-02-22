@@ -1,0 +1,63 @@
+.seccion {
+    background: url("../../../assets/background3.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh !important;
+}
+
+.contenedorPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53 42 37 / 61%);
+    height: 100vh;
+    text-align: center;
+}
+
+.loginForm {
+    width: 350px;
+    background-color: #4141416b;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.loginForm form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.loginForm .form-label {
+    color: white;
+}
+
+.loginForm .form-control {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.loginForm button {
+    width: 100%;
+}
+
+.formFooter{
+    color: white;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+.formFooter a{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.formFooter a:hover{
+    opacity:1;
+    transition: 0.5s;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}

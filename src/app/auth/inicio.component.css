@@ -73,20 +73,10 @@ nav.navbar-transparent {
     max-width: 90%;
 }
 
-.btnRegistrate{
-    color: white;
-    background: #f4623a;
-    border-radius: 25px;
+.btn-primary{
     max-width: 200px;
-    margin: 0 auto;
-    transition: 0.5s;
-    font-weight: 600;
 }
 
-.btnRegistrate:hover{
-    background: #ff5222;
-    transition: 0.5s;
-}
 
 @media (max-width: 775px){
     .titulo{

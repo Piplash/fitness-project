@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+.btn-primary{
+    color: white;
+    background: #f4623a !important;
+    border: none !important;
+    border-radius: 25px;
+    margin: 0 auto;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.btn-primary:hover{
+    background: #ff5222 !important;
+    transition: 0.5s;
+}

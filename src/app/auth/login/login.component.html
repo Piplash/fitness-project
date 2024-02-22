@@ -1,1 +1,29 @@
-<p>login works!</p>
+<section class="view seccion">
+  <div class="container-fluid contenedorPrincipal">
+    <div class="loginForm">
+      <form [formGroup]="loginForm" (ngSubmit)="iniciarSesion()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control form-control-sm" formControlName="email" placeholder="Ingrese su correo">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control form-control-sm" formControlName="password" placeholder="Ingrese su contraseña">
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm" [disabled]="!loginForm.valid">Iniciar Sesión</button>
+      </form>
+      <br>
+      <div class="formFooter container">
+        <div class="row">
+          <a class="nav-link" href="recuperar-password">Recuperar Contraseña</a>
+        </div>
+        <div class="divider d-flex align-items-center my-4">
+          <p class="text-center fw-bold mx-3 mb-0 text-muted" style="color: white !important; font-size: 0.6rem !important">O</p>
+        </div>
+        <div class="row">
+          <a class="nav-link" href="crear-cuenta">Crear Cuenta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
