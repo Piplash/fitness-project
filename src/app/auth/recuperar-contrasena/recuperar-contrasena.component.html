@@ -1,1 +1,48 @@
-<p>recuperar-contrasena works!</p>
+<nav class="navbar navbar-expand-lg navbar-transparent">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="inicio">Fitness Project v1.0</a>
+    </div>
+</nav>
+
+<section class="view seccion">
+    <div class="container-fluid contenedorPrincipal">
+      <div class="contenedorForm">
+        <h4>Recuperación de Contraseña</h4>
+        <hr>
+        <form [formGroup]="recuperarPasswordForm" (ngSubmit)="recuperarPassword()">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label class="label">Correo Electrónico</label>
+                        <input type="email" class="form-control form-control-sm" formControlName="emailUsuario" placeholder="Ingrese su correo">
+                    </div>
+                </div>
+                
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-sm">Recuperar Contraseña</button>
+        </form>
+
+        @if(false){
+            <div class="container errores">
+                <span>Errores</span>
+                
+            </div>
+        }
+        <br>
+        <div class="formFooter container">
+          <div class="row">
+            <a class="nav-link" href="login">Inicia Sesión</a>
+            
+          </div>
+          <div class="divider d-flex align-items-center my-4">
+            <p class="text-center fw-bold mx-3 mb-0 text-muted" style="color: white !important; font-size: 0.6rem !important">O</p>
+          </div>
+          <div class="row">
+            <a class="nav-link" href="crear-cuenta">Crear Cuenta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

@@ -1,15 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-transparent">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="inicio">Fitness Project v1.0</a>
+  </div>
+</nav>
+
 <section class="view seccion">
   <div class="container-fluid contenedorPrincipal">
-    <div class="loginForm">
+    <div class="contenedorForm">
+      <h4>Inicio de Sesión</h4>
+      <hr>
       <form [formGroup]="loginForm" (ngSubmit)="iniciarSesion()">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control form-control-sm" formControlName="email" placeholder="Ingrese su correo">
+        <div class="row">
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control form-control-sm" formControlName="email" placeholder="Ingrese su correo">
+            </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-          <input type="password" class="form-control form-control-sm" formControlName="password" placeholder="Ingrese su contraseña">
+        <div class="row">
+            <div class="form-group">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control form-control-sm" formControlName="password" placeholder="Ingrese su contraseña">
+            </div>
+            
         </div>
+
         <button type="submit" class="btn btn-primary btn-sm" [disabled]="!loginForm.valid">Iniciar Sesión</button>
       </form>
       <br>

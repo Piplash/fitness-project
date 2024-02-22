@@ -1,3 +1,23 @@
+:host{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+
+nav.navbar-transparent {
+    background-color: transparent;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.navbar-brand{
+    color:white;
+    font-weight: 600;
+}
+
 .seccion {
     background: url("../../../assets/background3.jpg") no-repeat center center;
     background-size: cover;
@@ -13,28 +33,28 @@
     text-align: center;
 }
 
-.loginForm {
+.contenedorForm {
     width: 350px;
     background-color: #4141416b;
     padding: 30px;
     border-radius: 25px;
 }
 
-.loginForm form {
+.contenedorForm form {
     width: 80%;
     margin: 0 auto;
 }
 
-.loginForm .form-label {
+.contenedorForm .form-label {
     color: white;
 }
 
-.loginForm .form-control {
+.contenedorForm .form-control {
     width: 100%;
     margin-bottom: 15px;
 }
 
-.loginForm button {
+.contenedorForm button {
     width: 100%;
 }
 

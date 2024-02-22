@@ -1,1 +1,92 @@
-<p>crear-cuenta works!</p>
+<nav class="navbar navbar-expand-lg navbar-transparent">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="inicio">Fitness Project v1.0</a>
+    </div>
+</nav>
+
+<section class="view seccion">
+    <div class="container-fluid contenedorPrincipal">
+      <div class="contenedorForm">
+        <h4>Creación de Cuenta</h4>
+        <hr>
+        <form [formGroup]="crearCuentaForm" (ngSubmit)="crearCuenta()">
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                        <label class="label">Nombre</label>
+                        <input type="text" class="form-control form-control-sm" formControlName="nombreUsuario" placeholder="Ingrese su correo">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                        <label class="label">Apellido</label>
+                        <input type="text" class="form-control form-control-sm" formControlName="apellidoUsuario" placeholder="Ingrese su correo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label class="label">Correo Electrónico</label>
+                        <input type="email" class="form-control form-control-sm" formControlName="emailUsuario" placeholder="Ingrese su correo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label class="label">Confirmar Correo</label>
+                        <input type="email" class="form-control form-control-sm" formControlName="confirmacionEmailUsuario" placeholder="Ingrese su correo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                        <label class="label">Contraseña</label>
+                        <input type="password" class="form-control form-control-sm" formControlName="passwordUsuario" placeholder="Ingrese su correo">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <div class="form-group">
+                        <label class="label">Confirmar Contraseña</label>
+                        <input type="password" class="form-control form-control-sm" formControlName="confirmacionPasswordUsuario" placeholder="Ingrese su correo">
+                    </div>
+                </div>
+            </div>
+
+          <button type="submit" class="btn btn-primary btn-sm">Crear Cuenta</button>
+        </form>
+
+        @if(this.labelErrores.length != 0){
+            <div class="container errores">
+                <span>Errores</span>
+                <ul>
+                    @for(item of labelErrores; track $index){
+                        <li>{{item}}</li>
+                    }
+                </ul>
+                
+            </div>
+        }
+        
+        <br>
+        <div class="formFooter container">
+          <div class="row">
+            <a class="nav-link" href="recuperar-password">Recuperar Contraseña</a>
+          </div>
+          <div class="divider d-flex align-items-center my-4">
+            <p class="text-center fw-bold mx-3 mb-0 text-muted" style="color: white !important; font-size: 0.6rem !important">O</p>
+          </div>
+          <div class="row">
+            <a class="nav-link" href="login">Inicia Sesión</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
